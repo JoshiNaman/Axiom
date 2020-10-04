@@ -1,6 +1,6 @@
 body{
     margin: auto;
-    background-image: url("/resources/images/spaceBG.JPG");
+    background-image: url("spaceBG.JPG");
     background-repeat: no-repeat;
     color: rgb(233, 229, 229);
     background-color: rgb(49, 7, 68);
@@ -15,7 +15,7 @@ body{
   }
    /* Top Container */
    .top-container {
-    background: url("/resources/images/try2.png");
+    background: url("try2.png");
     background-color: rgba(194, 215, 233, 0.068);
     background-repeat: no-repeat;
     background-size: 600px 300px;
@@ -86,7 +86,7 @@ body{
   /* top container ends*/
   /*countdown starts*/
   .countdown{
-    background-image: url("/resources/images/mtOlympus.jpg");
+    background-image: url("mtOlympus.jpg");
     background-color: rgb(1, 12, 22);
     background-repeat: no-repeat;
     background-position: right;
