@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="navFooter.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico">
+<title>
+  XT_HUNT
+</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: rgb(80, 79, 79);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+label{
+    color: #888;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:100px;height:50px;margin:5px;" href="#"></div>
+<input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i>::</i>
+    </label>
+    <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="celeste.html">Spacecrafts</a></li>
+<li><a href="planet.html">Tourism</a></li>
+<li><a href="purchase.html">Purchase</a></li>
+</ul>
+</nav>   
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="formBinder" style="padding: 0% 15%;margin:auto;width: 70%;">
+        <h1 style="font-size: 240%;">ABOUT XT_HUNT </h1>
+
+        <button onclick="typeWriter()" style="font-size: 120%;">Click me</button>
+        
+        <p id="demo" style="font-size: 150%;"></p>
+
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" style="font-size: 120%;">Open Form</button>
+
+                    <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                <div class="modal-content">
+                   <span class="close">&times;</span>
+                  <p style="color: #888;"> Fill the following form and we will get back to you.</p>
+                    <div>
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="Planet">Planetary System</label>
+                            <select id="Planet" name="Planet">
+                            <option value="Mars">Mars</option>
+                            <option value="Juiter Moon System">Jupiter moon system</option>
+                            <option value="SpaceAir">SpaceAir</option>
+                            </select>
+                            <label for="eId">E ID</label>
+                            <input type="text" id="eID" name="eID" placeholder="Your E ID...">
+                        
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!--Script starts-->
+<script>
+//typewriter effect starts
+var i = 0;
+var txt = 'In this day and age, we have understood that new explorers are hungry for a challenge and we have made one for them. Presenting to you all the XT_Hunt challenge from the AXIOM group. In this challenge you have to travel across all landmasses habilated by humankind. You have to identify and store data of several species detected by us. For more details fill the form below and our officials will contact you!';
+var speed = 35;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+//modal effect from below
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

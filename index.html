@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="navFooter.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico">
+<title>
+  AXIOM
+</title>
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:100px;height:50px;margin:5px;" href="#"></div>
+<input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i>::</i>
+    </label>
+    <ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="celeste.html">Spacecrafts</a></li>
+<li><a href="planet.html">Tourism</a></li>
+<li><a href="purchase.html">Purchase</a></li>
+</ul>
+</nav>    
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="wrapper">
+   <section class="top-container">
+      <header class="showcase">
+        <h1>AXIOM</h1>
+        <p> A spacecraft tourism company established in 2AE (after extinction) is the first of its kind to introduce space exploration to the general populous. If tourism to multiple planets is on your agenda this is definitely the website you must be scrolling through. This is the way to infinity and beyond (quite literally)!</p>
+      </header>
+      <div class="top-box top-box-a">
+        <a href="search.html"> <h2>Dedicated <br>Search <br> Option</h2> </a>
+      </div>
+      <div class="top-box top-box-b">
+        <a href="purchase.html"> <h2>Membership<br> Bonanza<br> and Gifts</h2></a>
+      </div>
+    </section>
+
+ <section class="countdown">
+    <div class="head">
+      <h1>MT. OLYMPUS VOLCANO</h1>
+    </div>
+      <!-- Display the countdown timer in an element -->
+      <div class="timer">
+      <p id="demo"></p>
+    </div>
+  </section>
+  <!--countdown ends-->
+  
+ <!-- Boxes Section -->
+ <section class="boxes">
+  <div class="box">
+    <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:150px;height:80px;margin:5px;">
+    <h3><a href="purchase.html" style="text-decoration: underline;">Olympus Mons</a></h3>
+    <p>Don't miss the oppurtunity to witness upclose, the largest volcano explode!</p>
+  </div>
+  <div class="box">
+    <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:150px;height:80px;margin:5px;">
+    <h3>XPlorer</h3>
+    <p>Be one of the first humans to set foot on new planets, job openings to be released soon!</p>
+  </div>
+  <div class="box">
+    <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:150px;height:80px;margin:5px;">
+    <h3>Development</h3>
+    <p>Our aim is to develop high grade spacecrafts that utilise as less resources as possible. Come be a part of this community!!</p>
+  </div>
+  <div class="box">
+    <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:150px;height:80px;margin:5px;">
+    <h3><a href="XT_Hunt.html" style="text-decoration: underline;">XT_Hunt</a></h3>
+    <p>Go on an inter-planetary mission of finding new life forms. Win rewards for new finds and credits for the rest!</p>
+  </div>
+</section>
+<!--boxes ends-->
+</div>
+<br>
+<!-- Images used to open the lightbox -->
+<div class="modalWrapper">
+  <div class="row">
+  <div class="column">
+    <img src="img1.jpg" alt="image1" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" alt="image2" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" alt="image 3" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" alt="image 4" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="bg00.jpg" alt="image1" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="mars.jpg" alt="image2" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="esa.jpg" alt="image 3" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+  <div class="column">
+    <img src="orion.png" alt="image 4" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width:180px;height:120px;">
+  </div>
+</div>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1.jpg" alt="image1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2.jpg" alt="image1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3.jpg" alt="image1" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4.jpg" alt="image1" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="First Beings" style="width:25%;">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Phoebos" style="width:25%">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Jupiter Rings" style="width:25%">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Europa's View" style="width:25%">
+    </div>
+  </div>
+</div>
+</div>
+<br>
+</br>
+<br>
+<div class="footer">
+    113, Main Quartes, Octavian complex, Theus SpaceAir 190
+   </div>
+<script src="main.js"></script>
+
+</body>
+</html> 

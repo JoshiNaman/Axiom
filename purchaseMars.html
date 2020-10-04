@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="purchase.css">
+<link rel="stylesheet" href="navFooter.css">
+<title>
+  Purchase
+</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="/resources/images/axiom 4.png" alt="axiom logo" style="width:100px;height:50px;margin:5px;" href="#"></div>
+    <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i>::</i>
+        </label>
+        <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="celeste.html">Spacecrafts</a></li>
+    <li><a href="planet.html">Tourism</a></li>
+    <li><a class="active" href="#">Purchase</a></li>
+    </ul>
+    </nav>   
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="bookCon">
+        <h2 >Booking Confirmed</h2>
+      </div>
+
+    <div class="lightMaker">
+                    <div class="header" style="font-size: 200%;">
+                <h2 >PURCHASE</h2>
+                <p>FIll the form below according to what you want to buy:</p>
+                </div>
+                <button class="accordion">Spacecraft Tickets</button>
+                <div class="panel">
+                    
+                    <div class=" airline tickets">
+                        <form action="" id="" method="post">
+                            <div style="margin-top:8px;margin-bottom:8px">
+                                <div style="margin-bottom:8px">
+                                    <label>
+                                        <div>Number of Participants</div>
+                                    </label>
+                                </div>
+                                <select id="selection" onchange="total()" name="">
+                                    <option value="1" selected="selected">1 guest</option>
+                                    <option value="2">2 guests</option>
+                                    <option value="4">4 guests</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;margin-bottom:8px">
+                                <div style="margin-bottom:8px">
+                                    <div>Choose a Date</div>
+                                </div>
+                                <input type="date" aria-label="Check In" id="startDate" name="startDate" value="" placeholder="Check In" autoComplete="off" />
+                            </div>
+                            <div style="margin-top:8px;margin-bottom:8px">
+                                <div style="margin-bottom:8px">
+                                    <label>
+                                        <div>Type of Spacecraft</div>
+                                    </label>
+                                </div>
+                                <select id="selection2" onchange="total()" name="">
+                                    <option value="1" selected="selected">Celeste</option>
+                                    <option value="2">Polaris</option>
+                                    <option value="4">Castor</option>
+                                </select>
+                            </div>
+                            <div style="margin-top:8px">
+                                <div>Total Price: SB <span id="result">89</span> (SpaceBucks)</div>
+                        </div>
+                        <div style="margin-top:8px;margin-bottom:8px">
+                            <div style="margin-bottom:8px">
+                                <div>Enter your Bank E ID</div>
+                            </div>
+                            <input type="text" aria-label="Check In" id="ID" name="ID" value="" placeholder="1234567---" autoComplete="off" />
+                        </div>
+                        <div style="margin-top: 8px;">
+                            <button type="button" onclick="printf()">Book Now</button>
+                            
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="accordion">Membership</button>
+                <div class="panel">
+                    <div class="jupiter membership">
+                        <form action="" id="" method="post">
+                            <div style="margin-top:8px;margin-bottom:8px">
+                                <div style="margin-bottom:8px">
+                                    <label>
+                                        <div>Type of Membership</div>
+                                    </label>
+                                </div>
+                                <select id="selection1" onchange="total1()" name="">
+                                    <option value="1" >MARS Basic</option>
+                                    <option value="2"selected="selected">MARS Pro</option>
+                                    <option value="4">JUPITER Basic</option>
+                                    <option value="6">JUPITER Pro</option>
+
+                                </select>
+                            </div>
+                            <div style="margin-top:8px;margin-bottom:8px">
+                                <div style="margin-bottom:8px">
+                                    <div>Enter your Bank E ID</div>
+                                </div>
+                                <input type="text" aria-label="Check In" id="ID" name="ID" value="" placeholder="1234567---" autoComplete="off" />
+                            </div>
+                            <div style="margin-top:8px">
+                                <div>Total Price: SB <span id="result1">899</span> (SpaceBucks)</div>
+                            </div>
+                            <div style="margin-top: 8px;">
+                                <button type="button" onclick="printf()">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+    </div>
+    <div class="footer">
+        113, Main Quartes, Octavian complex, Theus SpaceAir 190
+       </div>
+    <script src="purchase.js"></script>
+</body>
+</html>

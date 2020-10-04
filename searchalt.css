@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background: url(269192.jpg) no-repeat center fixed; 
+    background-size: cover;
+  
+    padding: 0px;}
+    
+    h1{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+       
+        position: absolute;
+        left: 29%;
+        top: 10%;
+
+    }
+    .search-bar {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+      
+        /*
+        Nope =(
+        margin-left: -25%;
+        margin-top: -25%;
+        */
+      
+        /* 
+        Yep!
+        */
+        transform: translate(-50%, -50%);
+      
+        /*
+        Not even necessary really. 
+        e.g. Height could be left out!
+        */
+        width: 40%;
+        height: 50%;
+      
+	position: relative;
+    margin: 1000px,1000px,1000px;
+    width: 95%;
+    max-width: 344px;
+    height: 48px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 40px;
+    left: 172px;
+    margin: 4px 0;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wrapper{
+
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-auto-rows:minmax(100px, auto);
+    grid-gap:1em;
+    justify-items:center;
+    align-items:center;
+    top:100%;
+  }
+
+  ul#wrapper > li{
+      margin: auto;
+      width: 68%;
+    background:#0099cc;
+    padding:1em;
+  }
+  
+
+  
+
+  
+
+a {
+    font-size: 24px;
+    color: black;
+    line-height: 100px;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 2rem;
+        margin: auto;
+        align-self: center  ;
+    }
+  }
